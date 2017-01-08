@@ -1,0 +1,105 @@
+.downloadaW{
+	width: 140px;
+	height: 158px;
+	position: absolute;
+	left: 860px;
+	top: 60px;
+	background: #2a2a2a;
+	border: 1px solid #000;
+	border-radius: 5px;
+	z-index: 999;
+	font: 12px/30px "宋体";
+	padding: 10px 0 0 0px;
+	display: none;
+}
+.downloadaW ul{
+	margin: 0;
+	padding: 0;
+}
+.downloadaW li{
+	opacity: .8;
+	filter:alpha(opacity=80);
+}
+.downloadaW li:hover{
+	background: #666;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+.downloadaW a{
+	color: #ccc;
+}
+.downloadaW span{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-left: 15px;
+}
+ #downloadSpan1{
+	background: url(img1/toplist.png) 0px 3px ;
+}
+#downloadSpan2{
+	background: url(img1/toplist.png) -20px -16px ;
+}
+#downloadSpan3{
+	background: url(img1/toplist.png) -20px -37px ;
+}
+#downloadSpan4{
+	background: url(img1/toplist.png) -51px -16px ;
+}
+#downloadSpan5{
+	background: url(img1/toplist.png) -51px -37px ;
+}
+.downloadaBtn{
+	width: 18px;
+	height: 15px;
+	position: absolute;
+	left: 915px;
+	bottom: 5px;
+	background: url(img1/toplist.png) -20px 0px ; 
+	display: none;
+}
+#bannerWrap{
+	width: 730px;
+	height: 336px;
+	position: relative;
+	overflow: hidden;background: red;
+}
+#w1List{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 30%;
+	bottom: 10px;
+	z-index: 99;
+}
+#w1List li{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	z-index: 999;
+	border-radius: 50%;
+	background: #ccc;
+	opacity: .5;
+	filter:alpha(opacity=50); 
+}
+#w1List2{
+	width: 1460px;
+	height: 336px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	
+}
+#w1List2 li{
+	width: 730px;
+	height: 336px;
+	float: left;
+}
+#w1List li.active{
+	background: red;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}

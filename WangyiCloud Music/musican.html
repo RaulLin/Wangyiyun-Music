@@ -339,22 +339,28 @@ $(function() {
 		m--;
 		if (m<=-2) {
 			m=-2;
+			$('.section3').find('.prev').hide();
+			$('.section3').find('.next').show();
+		}else{
+			//$('.section3').find('.prev').hide();
+			$('.section3').find('.next').show();
 		}
-		$('.section3').find('ul').css({
-			'left':m*260,
-		})
+		$('.section3').find('ul').animate({
+			left:m*280,
+		},{easing:'linear',})
 	})
 	$('.section3').find('.next').click(function(){
 		m++;console.log(m)
 		if (m>=0) {
 			m=0;
-			//$('.section3').find('.next').hide();
+			$('.section3').find('.prev').show();
+			$('.section3').find('.next').hide();
 		}else{
-			//$('.section3').find('.next').show();
+			$('.section3').find('.prev').show();
 		}
-		$('.section3').find('ul').css({
-			'left':m*260,
-		})
+		$('.section3').find('ul').animate({
+			left:m*280,
+		},{easing:'linear',})
 	})
 //..................................................................................	
 //第七屏鼠标移入移出遮罩层效果.....................................................	
@@ -389,7 +395,7 @@ $(function() {
 			</a>
 
 			<a class="abg aa3" href="musican.html">
-				<span class="nas1"><span class="nas2">朋友</span></span>
+				<span class="nas1"><span class="nas2">歌手</span></span>
 			</a>
 
 			<a class="abg1 aa4" href="kehuduan.html">

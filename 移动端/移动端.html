@@ -1,0 +1,1142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+	!function() {
+	var scale = 1;
+	var ratio = window.devicePixelRatio;
+	scale = scale / window.devicePixelRatio;
+	var meta = document.createElement("meta");
+	meta.setAttribute("name","viewport");
+	meta.setAttribute("content","width=device-width,initial-scale = "+scale+",minimum-scale = "+scale+", maximum-scale = "+scale+", user-scalable = no");
+	document.head.appendChild(meta);
+}();
+</script>	
+<title>无标题文档</title>
+<script>
+ fn();
+window.addEventListener("resize",fn);
+function fn() {
+	var html = document.querySelector("html");
+	var width = html.getBoundingClientRect().width;
+	html.style.fontSize = width/15 + "px"; //得出来的结果不能小于12 
+}
+</script>
+<style>
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.wrap {
+	height: 100%;
+	overflow: auto;
+}	
+img{
+	vertical-align: top;
+	border: none;
+}
+h2,p,ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.clearFix:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+p{
+	margin: 0;
+}
+.header{
+	height: 1.8rem;
+	background: #ff5000;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+}
+.nothing{
+	height: 1.81rem;
+}
+.ha1{
+	float: left;
+	padding-left: .5rem;
+	display: inline-block;
+	width: 1.6rem;
+	height: 1.8rem;
+}
+.ha1 p{
+	font: 0.36rem "微软雅黑";
+	color: #fff;
+}
+.ha1 span{
+	display: block;
+	width: .88rem;
+	height: .82rem;
+	margin: .34rem 0rem 0rem .12rem;
+	background: url(img2/icon.gif) 0 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+input{
+	box-sizing: content-box;
+	float: left;
+	display: inline-block;
+	width: 7.32rem;
+	height: 1.28rem;
+	background: #d42d00;
+	border-radius: .1rem;
+	border: none;
+	margin-top: 0.2rem;
+	padding: 0 1.2rem;
+	font: .6rem "微软雅黑";
+	color: #fff;
+}
+.ha2{
+	position: absolute;
+	width: .56rem;
+	height: .58rem;
+	left: 2.2rem;
+	margin: .5rem 0 0 .1rem;
+	background: url(img2/icon.gif) -.86rem 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+.ha3{
+	position: absolute;
+	width: .74rem;
+	height: .64rem;
+	left: 10.8rem;
+	margin: .5rem .1rem 0 0rem;
+	background: url(img2/icon.gif) -1.46rem 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+.ha4{
+	float: right;
+	padding-left: .5rem;
+	display: inline-block;
+	width: 1.46rem;
+	height: 1.8rem;
+	margin: .24rem .4rem 0 0.82rem;
+	font: .36rem "微软雅黑";
+	color: #fff;
+}
+.ha4 span{
+	display: block;
+	width: 1.08rem;
+	height: .86rem;
+	background: url(img2/icon.gif) -2.16rem 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+.logo{
+	padding: 0;
+	margin: 0;
+}
+.section1 a{
+	float: left;
+	width: 3rem;
+	height: 3.4rem;
+
+}
+
+.section1 img{
+	margin: .24rem .44rem .3rem .84rem;
+	width: 1.72rem;
+	height: 1.70rem;
+}
+.section1 h2{
+	font: .42rem "微软雅黑";
+	color: #696969;
+	text-align: center;
+/*	text-shadow: 0 0 1 #ccc;*/
+}
+.section2{
+	border-top: 1px solid #ccc;
+	padding: .2rem .4rem;
+	margin: 0 .36rem;
+}
+.s2ul li{
+	float: left;
+}
+.s2l1{
+	width: 1.76rem;
+	height: 1.72rem;
+	font:bold italic .72rem "微软雅黑";
+	color: #d90603;
+	padding-top: .2rem;
+	padding-right: .4rem;
+	border-right: 1px solid #ccc; 
+}
+.s2l1 a{
+	font:bold italic .72rem "微软雅黑";
+	color: #d90603; 
+}
+.s2l2{
+	padding: 0 .4rem;
+}
+.seperate{
+	height: 0.24rem;
+	width: 15rem;
+	background: #eee;
+}
+.s2l2p1 p{
+	height: .6rem;
+}
+.s2l2p1 span{
+	display: inline-block;
+	width: 1.12rem;
+	height: .58rem;
+	background: url(img2/icon.gif) -3.22rem 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+.s2l2p1 a{
+	font: .5rem/.6rem "微软雅黑";
+	color: #000;
+}
+.s3ul li{
+	float: left;
+}
+.s3l2 a,
+.s3l2a2,
+.s3l2a3{
+	float: left;
+}
+.s3l1a{
+	display: inline-block;
+	width: 5rem;
+	height: 6.82rem;
+	border-right: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	padding: .36rem;
+}
+.s3l1a h2 span{
+	display: inline-block;
+	width: .72rem;
+	height: .72rem;
+	background: url(img2/icon.gif) -4.36rem 0 no-repeat;
+	background-size: 6rem 6rem;
+}
+.s3l1a h2{
+	font: .68rem "微软雅黑";
+	color: #fe3727;
+}
+.s3l1p1{
+	font: .48rem "微软雅黑";
+	color: #8a878a;
+}
+.s3l1p3{
+	display: inline-block;
+	width: .54rem;
+	height: .8rem;
+	font: .44rem/.8rem "微软雅黑";
+	color: #fff;
+	padding: 0rem .2rem 0rem .06rem;
+	background: #000;
+	/*margin: 0;*/
+}
+.s3l2a1 div{
+	margin-right: .8rem;
+}
+.s3l2a1{
+	display: inline-block;
+	width: 8.52rem;
+	height: 2.98rem;
+	padding: .24rem .36rem;
+	border-bottom: 1px solid #e8e8e8; 
+}
+.s3l2a1 h2{
+	font: .68rem "微软雅黑";
+	color: #40b9ea;
+}
+.s3l2a1 span{
+	display: inline-block;
+	width: .72rem;
+	height: .72rem;
+	background: url(img2/s3a2a1.png) 0 0 no-repeat;
+	background-size: .72rem .72rem;
+}
+.s3l2p2{
+	font: .68rem "微软雅黑";
+	color: #a0d2f4;
+}
+.s3l2a1 img,
+.s3l2a1 div{
+	float: left;
+}
+.s3l2a2{
+	display: inline-block;
+	width: 3.86rem;
+	height: 4.06rem;
+	padding: 0rem .36rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+.s3l2a2 span{
+	display: inline-block;
+	width: .72rem;
+	height: .72rem;
+	background: url(img2/s3a2a2.png) 0px 0 no-repeat;
+	background-size: .72rem .72rem;
+}
+.s3l2a2 h2{
+	font: .64rem "微软雅黑";
+	color: #f58eb1;
+}
+.s3l2a3{
+	display: inline-block;
+	width: 3.92rem;
+	height: 4.06rem;
+	padding: 0rem .36rem;
+	border-bottom: 1px solid #e8e8e8;
+}
+.s3l2a3 span{
+	display: inline-block;
+	width: .72rem;
+	height: .72rem;
+	background: url(img2/s3a2a3.png) 0px 0 no-repeat;
+	background-size: .72rem .72rem;
+}
+.s3l2a3 h2{
+	font: .64rem "微软雅黑";
+	color: #f49a9a;
+}
+.section4 h2 span{
+	display: inline-block;
+	width: .64rem;
+	height: .64rem;
+	margin-right: .2rem;
+	margin-bottom: -0.1rem;
+	background: url(img2/s4h2.png) 0px 0 no-repeat;
+	background-size: .64rem .64rem;
+}
+.section4 h2{
+	font:bold .54rem/1.26rem "微软雅黑";
+	color: #ff350e;
+	text-align: center;
+}
+.s4p1{
+	font:bold .6rem "微软雅黑";
+	color: #2e2e2e;
+}
+.s4p1 span{
+	display: inline-block;
+	width: 2.36rem;
+	height: .66rem;
+	margin-bottom: -0.1rem;
+	background: url(img2/s4h3.png) 0px 0 no-repeat;
+	background-size: 2.36rem .66rem;
+}
+.s4p2{
+	font:bold .48rem "微软雅黑";
+	color: #e14025;
+}
+.s4p3{
+	font:bold .54rem "微软雅黑";
+	color: #434343;
+}
+.s4ul{
+	border-bottom: 2px solid #e0e0e0; 
+}
+.s4ul a{
+	float: left;
+}
+#s4a11{
+	border-right: none;
+}
+.s4a1{
+	display: inline-block;
+	padding: .28rem .36rem;
+	width: 5.02rem;
+	height: 4rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}	
+.s4a2{
+	display: inline-block;
+	padding: .28rem .24rem;
+	width: 2.58rem;
+	height: 4rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}
+.s5ul li{
+	float: left;
+}
+.s5li{
+	border-left: 1px solid #e0e0e0; 
+}
+.section5 h2 span{
+	display: inline-block;
+	width: .64rem;
+	height: .64rem;
+	margin-right: .2rem;
+	margin-bottom: -0.1rem;
+	background: url(img2/s4h2.png) 0px 0 no-repeat;
+	background-size: .64rem .64rem;
+}
+.section5 h2{
+	font:bold .54rem/1.26rem "微软雅黑";
+	color: #ff350e;
+	text-align: center;
+}
+.s5a1{
+	display: inline-block;
+	padding: .28rem 0 0 .36rem;
+	width: 7.12rem;
+	height: 4.10rem;
+	border-top: 1px solid #e8e8e8;
+}	
+#s5a1{
+	border-right: none;
+}	
+.s5p1{
+	font: .6rem "微软雅黑";
+	color: #2e2e2e;
+}
+.s5sp1{
+	display: block;
+	width: 1.89rem;
+	height: .62rem;
+	background: url(img2/icon.png) -1px -5.82rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.s5p2{
+	font:bold .48rem "微软雅黑";
+	color: #969696;
+}
+.s5sp2{
+	display: block;
+	width: 1.16rem;
+	height: .64rem;
+	background: url(img2/icon.png) 0px -6.44rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.s5a2{
+	display: inline-block;
+	padding: .36rem 0 .4rem .36rem;
+	width: 3.36rem;
+	height: 4.04rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}	
+.s5a3{
+	display: inline-block;
+	padding: .36rem 0 .4rem .36rem;
+	width: 3.38rem;
+	height: 4.04rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}	
+.s5a4{
+	display: inline-block;
+	padding: .36rem 0 .4rem .36rem;
+	width: 3.36rem;
+	height: 4.04rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}	
+.s5a5{
+	display: inline-block;
+	padding: .36rem 0 .4rem .36rem;
+	width: 3.40rem;
+	height: 4.04rem;
+	border-top: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}	
+#s5a5{
+	border-right: none;
+}	
+.s5p3{
+	font:bold .54rem "微软雅黑";
+	color: #2e2e2e;
+}
+.s5a1 div,
+.s5a1 img{
+	float: left;
+}
+.s6a1,.s6a2,
+.s6a3,.s6a4{
+	display: inline-block;
+	width: .84rem;
+	height: .84rem;
+	background-size: .84rem 3.4rem;
+}
+.s6a1{
+	margin-top: .32rem;
+	margin-left: .4rem;
+	background: url(img2/icon1.png) 0px 0px no-repeat;
+	background-size: .84rem 3.4rem;
+}
+.s6a2{
+	margin-top: .32rem;
+	margin-left: .16rem;
+	background: url(img2/icon1.png) 0px -.84rem no-repeat;
+	background-size: .84rem 3.4rem;
+}
+.s6a3{
+	margin-top: .32rem;
+	margin-left: .16rem;
+	background: url(img2/icon1.png) 0px -1.68rem no-repeat;
+	background-size: .84rem 3.4rem;
+}
+.s6a4{
+	margin-top: .32rem;
+	margin-left: .16rem;
+	background: url(img2/icon1.png) 0px -2.52rem no-repeat;
+	background-size: .84rem 3.4rem;
+}
+.s6a5{
+	float: right;
+	margin-right: .4rem;
+	font: .48rem/1.44rem "微软雅黑";
+	color: #686868;
+}
+.s6a5 span{
+	display: inline-block;
+	width: .22rem;
+	height: .36rem;
+	background: url(img2/icon.png) 0px -9.16rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.s7logo{
+	display: inline-block;
+	width: 15rem;
+	height: 3rem;
+	background: url(img2/s7logo.png) 0px 0px no-repeat;
+	background-size: 15rem 3rem;
+}
+.s7sp1{
+	display: inline-block;
+	width: .64rem;
+	height: .64rem;
+	margin-left: 6rem;
+	margin-right: .2rem;
+	margin-bottom: -0.1rem;
+	background: url(img2/s4h2.png) 0px 0 no-repeat;
+	background-size: .64rem .64rem;
+}
+.section7 h2{
+	font:bold .54rem/1.44rem "微软雅黑";
+	color: #ff350e;
+}
+
+
+
+.s8logo{
+	display: inline-block;
+	width: 15rem;
+	height: 3rem;
+	border-top: 1px solid #e8e8e8;
+	background: url(img2/s8logo.png) 0px 0px no-repeat;
+	background-size: 15rem 3rem;
+}
+footer{
+	height: 1.96rem;
+	width: 100%;
+	position: absolute;
+	background: #f6f0f2;
+	left: 0;
+	top: 24.74rem;
+}
+.fnav{
+	height: 1.94rem;
+	background: #f6f0f2;
+	border-top: 1px solid #d9d9d9;
+}
+.fnav a{
+	display: inline-block;
+	height: 1.94rem;
+	width: 3rem;
+}
+.fp1{
+	font: .4rem "微软雅黑";
+	color: #80838b;
+	text-align: center;
+}
+.fna1 span{
+	display: block;
+	width: .9rem;
+	height: .82rem;
+	margin: .32rem 0rem .12rem 1.04rem;
+	background: url(img2/icon.png) 0px -14.28rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.fna2 span{
+	display: block;
+	width: 1.28rem;
+	height: .9rem;
+	margin: .32rem 0rem .12rem 1.04rem;
+	background: url(img2/icon.png) 0px -15.1rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.fna3 span{
+	display: block;
+	width: .92rem;
+	height: .82rem;
+	margin: .32rem 0rem .12rem 1.04rem;
+	background: url(img2/icon.png) -1.08rem -14.28rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.fna4 span{
+	display: block;
+	width: .88rem;
+	height: .84rem;
+	margin: .32rem 0 .12rem 1.04rem;
+	background: url(img2/icon.png) 0px -16.06rem no-repeat;
+	background-size: 2rem 20rem;
+}
+.fna5 span{
+	display: block;
+	width: .74rem;
+	height: .8rem;
+	margin: .32rem 0 .12rem 1.04rem;
+	background: url(img2/icon.png) 0px -16.9rem no-repeat;
+	background-size: 2rem 20rem;
+}
+
+/*.aa{
+	height: 5rem;
+}*/
+@keyframes move{
+	0%{
+		left: 0;
+	}
+	5%{
+		left: -15rem;
+	}
+	25%{
+		left: -15rem;
+	}
+	30%{
+		left: -30rem;
+	}
+	50%{
+		left: -30rem;
+	}
+	55%{
+		left: -45rem;
+	}
+	75%{
+		left: -45rem;
+	}
+	80%{
+		left: -60rem;
+	}
+	100%{
+		left: -60rem;
+	}
+}
+.ad{
+	width: 75rem;
+	height: 4.54rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	animation: 10s 1s move infinite;
+
+}
+.ad a{
+	float: left;
+	width: 15rem;
+	height: 4.54rem;
+	background: url(img2/logo.png) no-repeat 0 0;
+	background-size: 15rem 4.54rem;
+
+}
+@keyframes moves{
+	0%{
+		top: 0;
+	}
+	5%{
+		top: -1.14rem;
+	}
+	25%{
+		top: -1.14rem;
+	}
+	30%{
+		top: -2.28rem;
+	}
+	50%{
+		top: -2.28rem;
+	}
+	55%{
+		top: -3.42rem;
+	}
+	75%{
+		top: -3.42rem;
+	}
+	80%{
+		top: -4.56rem;
+	}
+	100%{
+		top: -4.56rem;
+	}
+}
+.s2l2{
+	height: 2.28rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.s2l2d{
+	height: 6.84rem;
+	position: relative;
+	overflow: hidden;
+	animation: 10s 1s moves infinite;
+}
+</style> 
+</head>
+<body>
+<div class="wrap">
+<header class="header">
+ 	<a href="#" class="ha1">
+		<span></span>
+		<p>扫一扫</p>
+	</a>
+	<a href="#" class="ha2"></a>
+	<a href="#" class="ha3"></a>
+	<input type="text" value="港岛妹妹的西班牙馅饼"/>
+	<a href="#" class="ha4">
+		<span></span>
+		消息
+	</a>
+</header>
+<div>
+<div class="nothing"></div>
+<div class="logo">
+	<!-- <img src="img2/logo.png"/> -->
+</div>
+<nav class="ad">
+	<a href="#"></a>
+	<a href="#"></a>
+	<a href="#"></a>
+	<a href="#"></a>
+	<a href="#"></a>
+</nav>
+
+
+
+
+
+<section class="section1 clearFix">
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a1.png"/>
+ 		<h2>天猫</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a2.png"/>
+ 		<h2>聚划算</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a3.png"/>
+ 		<h2>天猫国际</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a4.png"/>
+ 		<h2>外卖</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a5.png"/>
+ 		<h2>天猫超市</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a6.png"/>
+ 		<h2>充值中心</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a7.png"/>
+ 		<h2>阿里旅行</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a8.png"/>
+ 		<h2>领金币</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a9.png"/>
+ 		<h2>到家</h2>
+ 	</a>
+ 	<a class="s1a" href="#">
+ 		<img src="img2/a10.png"/>
+ 		<h2>分类</h2>
+ 	</a>
+</section>   
+<section class="section2">
+ 	<ul class="s2ul clearFix">
+ 		
+ 		<li class="s2l1">
+ 			<a href="#">淘宝头条</a>
+ 		</li>
+ 		<li class="s2l2">
+ 			<div class="s2l2d">
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">你们都错了！iPhone 6SE首曝光</a>
+ 			</p>
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">苹果在美剧中提前曝光iPhone 7真机S</a>
+ 			</p>
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">你们都错了！iPhone 6SE首曝光</a>
+ 			</p>
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">苹果在美剧中提前曝光iPhone 7真机S</a>
+ 			</p>
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">你们都错了！iPhone 6SE首曝光</a>
+ 			</p>
+ 			<p class="s2l2p1">
+ 				<span></span><a href="#">苹果在美剧中提前曝光iPhone 7真机S</a>
+ 			</p>
+ 			</div>
+ 		</li>
+ 	</ul>
+</section>
+<div class="seperate"></div>
+<section class="section3">
+ 	<ul class="s3ul clearFix">
+ 		<li>
+ 			<a class="s3l1a" href="#">
+ 				<h2>
+ 					<span></span>淘抢购
+ 				</h2>
+ 				<p class="s3l1p1">汇全网尖货 抢半价</p>
+ 				<p class="s3l1p2">
+ 					<span class="s3l1p3">01</span><span class="s3l1p4">:</span><span class="s3l1p3">32</span><span class="s3l1p4">:</span><span class="s3l1p3">22</span>						
+ 				</p>
+ 				<img src="img2/s3a1.png"/>
+ 			</a>
+ 		</li>
+ 		<li class="s3l2 clearFix">
+ 			<a class="s3l2a1 clearFix" href="#">
+ 				<div>
+	 				<h2>
+	 					<span></span>有好货
+	 				</h2>
+	 				<p class="s3l1p1">每日精选200款</p>
+	 				<p class="s3l2p2">品质生活指南</p>
+	 			</div>	
+ 				<img src="img2/s3a2.png"/>
+ 			</a>
+ 			<div>
+ 			<a class="s3l2a2" href="#">
+ 				<h2>
+ 					<span></span>爱逛街
+ 				</h2>
+ 				<p class="s3l1p1">可爱的你会喜欢</p>
+ 				<img src="img2/s3a3.png"/>
+ 			</a>
+ 			<a class="s3l2a3" href="#">
+ 				<h2>
+ 					<span></span>必买清单
+ 				</h2>
+ 				<p class="s3l1p1">都帮您整理好啦</p>
+ 				<img src="img2/s3a4.png"/>
+ 			</a>
+ 			</div>
+ 		</li>
+ 	</ul>
+</section>
+  <div class="seperate"></div>
+<section class="section4">
+  	<h2><span></span>超实惠</h2>
+  	<ul class="s4ul clearFix">
+  		<li>
+  			<a class="s4a1" href="#">
+  				<p class="s4p1">非常大牌<span></span></p>
+  				<p class="s4p2">大牌底价</p>
+  				<img src="img2/s4a1.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">全球精选</p>
+  				<p class="s4p2">特卖包邮抢</p>
+  				<img src="img2/s4a2.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">量贩团</p>
+  				<p class="s4p2">价优赠品多</p>
+  				<img src="img2/s4a3.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">聚名品</p>
+  				<p class="s4p2">时尚心机搭</p>
+  				<img src="img2/s4a4.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a1" id="s4a11" href="#">
+  				<p class="s4p1">天天特价</p>
+  				<p class="s4p2">每日精选千款好货</p>
+  				<img src="img2/s4a5.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">品牌店庆</p>
+  				<p class="s4p2">低至9.9元</p>
+  				<img src="img2/s4a6.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">俪人购</p>
+  				<p class="s4p2">品牌特卖</p>
+  				<img src="img2/s4a7.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">清仓</p>
+  				<p class="s4p2">品牌尾货清</p>
+  				<img src="img2/s4a8.png"/>
+  			</a>
+  		</li>
+  	</ul>
+</section>
+<div class="seperate"></div>
+
+<section class="section5">
+  	<h2><span></span>天猫必逛</h2>
+  	<ul class="s5ul clearFix">
+  		<li>
+  			<a class="s5a1 clearFix" href="#">
+  				<div>
+	  				<p class="s5p1">全球时尚</p>
+	  				<p class="s5p2">大牌精致时尚</p>
+	  				<span class="s5sp1"></span>
+	  			</div>	
+  				<img src="img2/s5a1.png"/>
+  			</a>
+  		</li>
+  		<li class="s5li">
+  			<a class="s5a1" id="s5a1" href="#">
+  				<div>
+	  				<p class="s5p1">天猫超市</p>
+	  				<p class="s5p2">买贵赔十倍</p>
+	  				<span class="s5sp2"></span>
+	  			</div>	
+  				<img src="img2/s5a2.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a2" href="#">
+  				<p class="s5p3">天猫焕新</p>
+  				<p class="s5p2">品牌精选新品</p>
+  				<img src="img2/s5a3.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a3" href="#">
+  				<p class="s5p3">天天搞机</p>
+  				<p class="s5p2">魅族MX6开售</p>
+  				<img src="img2/s5a4.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a4" id="s5a11" href="#">
+  				<p class="s5p3">喵鲜生</p>
+  				<p class="s5p2">酸爽爽爆味蕾</p>
+  				<img src="img2/s5a5.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a5" id="s5a5" href="#">
+  				<p class="s5p3">苏宁易购</p>
+  				<p class="s5p2">6s 64G5288抢</p>
+  				<img src="img2/s5a6.png"/>
+  			</a>
+  		</li>
+  	</ul>
+  </section>
+ <div class="seperate"></div> 
+<section class="section4">
+  	<h2><span></span>特色好货</h2>
+  	<ul class="s4ul clearFix">
+  		<li>
+  			<a class="s4a1" href="#">
+  				<p class="s4p1">全球购<span></span></p>
+  				<p class="s4p2">探索全球美好生活</p>
+  				<img src="img2/s6a1.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">淘宝汇吃</p>
+  				<p class="s4p2">鲜果抢先购</p>
+  				<img src="img2/s6a2.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">极有家</p>
+  				<p class="s4p2">造有品的家</p>
+  				<img src="img2/s6a3.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">拍卖</p>
+  				<p class="s4p2">特价车捡漏</p>
+  				<img src="img2/s6a4.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a1" id="s4a11" href="#">
+  				<p class="s4p1">中国制造</p>
+  				<p class="s4p2">新生活 新国货</p>
+  				<img src="img2/s6a5.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">淘票票</p>
+  				<p class="s4p2">夏有乔木</p>
+  				<img src="img2/s6a6.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">淘宝众筹</p>
+  				<p class="s4p2">一秒折叠</p>
+  				<img src="img2/s6a7.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s4a2" href="#">
+  				<p class="s4p3">每日新品</p>
+  				<p class="s4p2">找新品戳我</p>
+  				<img src="img2/s6a8.png"/>
+  			</a>
+  		</li>
+  	</ul>
+  </section>
+<section class="section6 clearFix">
+	<a class="s6a1" href="#"></a><a class="s6a2" href="#"></a><a class="s6a3" href="#"></a><a class="s6a4" href="#"></a>
+	<a class="s6a5 " href="#">更多服务<span></span></a>
+</section>
+<section class="section7">
+	<a class="s7logo" href="#"></a>
+</section>
+<div class="seperate"></div>
+<section class="section7">
+	<h2>
+	<span class="s7sp1"></span>热门市场
+	<a class="s6a5 clearFix" href="#">更多<span></span></a>
+	</h2>
+  	<ul class="s5ul clearFix">
+  		
+  		<li>
+  			<a class="s5a2" href="#">
+  				<p class="s5p3">iFashion</i></p>
+  				<p class="s5p2">每日新鲜潮搭</p>
+  				<img src="img2/s7a1.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a3" href="#">
+  				<p class="s5p3">潮电街</p>
+  				<p class="s5p2">炫酷科技潮品</p>
+  				<img src="img2/s7a2.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a4" id="s5a11" href="#">
+  				<p class="s5p3">亲宝贝</p>
+  				<p class="s5p2">母婴精品</p>
+  				<img src="img2/s7a3.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a5" id="s5a5" href="#">
+  				<p class="s5p3">玩味烘焙</p>
+  				<p class="s5p2">美食杰</p>
+  				<img src="img2/s7a4.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a1 clearFix" href="#">
+	  				<p class="s5p1">商场同款</p>
+	  				<p class="s5p2">透气运动休闲鞋，你值得拥有</p>
+  				<img src="img2/s7a5.png"/>
+  			</a>
+  		</li>
+  		<li class="s5li">
+  			<a class="s5a1" id="s5a1" href="#">
+	  				<p class="s5p1">潮流影音</p>
+	  				<p class="s5p2">休闲听歌，别让烂耳机堵住你的耳朵</p>
+  				<img src="img2/s7a6.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a1 clearFix" href="#">
+	  				<p class="s5p1">男人妆</p>
+	  				<p class="s5p2">电脑族男士，小心辐射伤害</p>	
+  				<img src="img2/s7a7.png"/>
+  			</a>
+  		</li>
+  		<li class="s5li">
+  			<a class="s5a1" id="s5a1" href="#">
+	  				<p class="s5p1">爱车装扮</p>
+	  				<p class="s5p2">美食好帮手，让小家电玩转厨房</p>
+  				<img src="img2/s7a8.png"/>
+  			</a>
+  		</li>
+  		<li>
+  			<a class="s5a1 clearFix" href="#">
+	  				<p class="s5p1">星范</p>
+	  				<p class="s5p2">帅！一件白衬衫就搞定所有搭配</p>	
+  				<img src="img2/s7a9.png"/>
+  			</a>
+  		</li>
+  		<li class="s5li">
+  			<a class="s5a1" id="s5a1" href="#">
+	  				<p class="s5p1">网红集合</p>
+	  				<p class="s5p2">大码男夹克怎样穿搭才够时髦</p>	
+  				<img src="img2/s7a10.png"/>
+  			</a>
+  		</li>
+  	</ul>
+</section>
+<section class="section8">
+	<a class="s8logo" href="#"></a>
+</section>
+<div class="seperate"></div>
+</div>
+<footer>
+	<nav class="fnav">
+		<a class="fna1" href="#">
+			<span></span>
+			<p class="fp1">首页</p>
+		</a><a class="fna2" href="#">
+			<span></span>
+			<p class="fp1">微淘</p>
+		</a><a class="fna3" href="#">
+		
+			<span></span>
+			<p class="fp1">社区</p>
+		</a><a class="fna4" href="#">
+		
+			<span></span>
+			<p class="fp1">购物车</p>
+		</a><a class="fna5" href="#">
+		
+			<span></span>
+			<p class="fp1">我的淘宝</p>
+		</a>
+	</nav>
+</footer>   
+ <div class="aa"></div>
+ </div>
+</body>
+</html>
